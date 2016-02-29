@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+
+html, body {
+  height: 100%;
+}
+
+html, body, .page-header {
+  width: 100%;
+}
+
+
+.page-header {
+  margin-top: 0;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  background: #3EBBB3;
+  color: white;
+}
+
+
+
+
+footer {
+  background: #3EBBB3;
+  padding-top: 25px;
+}
+
+
+.peepee {
+  text-align: center;
+}
+
+.take-top, .links, .github {
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+
+.peepee, .dalinks, .octocat {
+  margin: 25px 0;
+}
+
+
+.take-top span {
+  padding: 8px;
+}
+
+.take-top:hover {
+  color: white;
+  border: solid white;
+  text-decoration: none;
+}
+
+
+.links span, .github span {
+  border-bottom: solid white;
+}
+
+
+.dalinks ul {
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0;
+}
+
+.dalinks ul li a {
+  color: white;
+}
+
+.dalinks ul li a:hover {
+  color: #14343D;
+  text-decoration: none;
+}
+
+
+.octocat {
+  text-align: center;
+}
+
+
+.copyright {
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  color: white;
+  margin-top: 5%;
+}
