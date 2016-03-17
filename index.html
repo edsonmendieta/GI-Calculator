@@ -15,20 +15,268 @@
     
     <!--my stylesheet -->
     <link rel="stylesheet" href="main.css">
+    
+    <link href="flat/green.css" rel="stylesheet">
+    <script src="icheck.js"></script>
   </head>
   <body>
     <h1 class="page-header" id="page-header">
-      GI Load<br>Calculator
+      Breakfast GI Load<br>Calculator
     </h1>
     
-     
-    <footer class="navbar-fixed-bottom">
+    <ul class="food-list">
+      
+    </ul>
+    <div role="tabpanel"> 
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#fruits1" aria-controls="" data-toggle="tab" role="tab">Fruit</a></li>
+        <li role="presentation"><a href="#fruits2" aria-controls="" data-toggle="tab" role="tab">Meat/Poultry</a></li>
+        <li role="presentation"><a href="#fruits3" aria-controls="" data-toggle="tab" role="tab">Liquids</a></li>
+        <li role="presentation"><a href="#fruits4" aria-controls="" data-toggle="tab" role="tab">Grains</a></li>
+      </ul>
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="fruits1">
+              <h4 class="fruit-header">
+                Fruit
+              </h4>
+              <div class="fruit-columns">
+                <ul class="list fruit-list-1 col-sm-3">
+                  <label class="general orange">
+                    <input type="checkbox">
+                    Orange
+                  </label>
+                  <label class="general apple">
+                    <input type="checkbox">
+                    Apple
+                  </label>
+                   <label class="general banana">
+                    <input type="checkbox">
+                    Banana
+                  </label>
+                   <label class="general grapes">
+                    <input type="checkbox">
+                    Grapes
+                  </label>
+                   <label class="general Pineapple">
+                    <input type="checkbox">
+                    Pineapple
+                  </label>
+                   <label class="general Kiwi">
+                    <input type="checkbox">
+                    Kiwi
+                  </label>
+                </ul>
+                <ul class="list fruit-list-2 col-sm-3">
+                  <label class="general mango">
+                    <input type="checkbox">
+                    Mango
+                  </label>
+                  <label class="general blueberries">
+                    <input type="checkbox">
+                    Blueberries
+                  </label>
+                   <label class="general grapefruit">
+                    <input type="checkbox">
+                    Grapefruit
+                  </label>
+                   <label class="general strawberry">
+                    <input type="checkbox">
+                    Strawberry
+                  </label>
+                   <label class="general tangerine">
+                    <input type="checkbox">
+                    Tangerine
+                  </label>
+                   <label class="general blackberry">
+                    <input type="checkbox">
+                    Blackberry
+                  </label>
+                </ul>
+              </div>
+            </div> 
+          <div role="tabpanel" class="tab-pane" id="fruits2">
+            <h4 class="fruit-header">
+              Meat/Poultry
+            </h4>
+            <div class="fruit-columns">
+              <ul class="list fruit-list-1 col-sm-3">
+                <label class="general steak">
+                  <input type="checkbox">
+                  Steak
+                </label>
+                <label class="general beef">
+                  <input type="checkbox">
+                  Beef
+                </label>
+                 <label class="general chicken">
+                  <input type="checkbox">
+                  Chicken
+                </label>
+                 <label class="general ham">
+                  <input type="checkbox">
+                  Ham
+                </label>
+                 <label class="general turkey">
+                  <input type="checkbox">
+                  Turkey
+                </label>
+                 <label class="general salami">
+                  <input type="checkbox">
+                  Salami
+                </label>
+              </ul>
+              <ul class="list fruit-list-2 col-sm-3">
+                <label class="general duck">
+                  <input type="checkbox">
+                  Duck
+                </label>
+                <label class="general pork">
+                  <input type="checkbox">
+                  Pork
+                </label>
+                <label class="general sausage">
+                  <input type="checkbox">
+                  Sausage
+                </label>
+                <label class="general eggs">
+                  <input type="checkbox">
+                  Eggs
+                </label>
+                <label class="general bacon">
+                  <input type="checkbox">
+                  Bacon
+                </label>
+              </ul>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="fruits3">
+            <h4 class="fruit-header">
+              Liquids
+            </h4>
+            <div class="fruit-columns">
+              <ul class="list fruit-list-1 col-sm-3">
+                <label class="general applejuice">
+                  <input type="checkbox">
+                  Apple Juice
+                </label>
+                <label class="general cranberryjuice">
+                  <input type="checkbox">
+                  Cranberry Juice
+                </label>
+                 <label class="general orangejuice">
+                  <input type="checkbox">
+                  Orange Juice
+                </label>
+                 <label class="general apricotjuice">
+                  <input type="checkbox">
+                  Apricot Juice
+                </label>
+                 <label class="general lemonade">
+                  <input type="checkbox">
+                  Lemonade
+                </label>
+                 <label class="general milk">
+                  <input type="checkbox">
+                  Milk
+                </label>
+              </ul>
+              <ul class="list fruit-list-2 col-sm-3">
+                <label class="general prunejuice">
+                  <input type="checkbox">
+                  Prune Juice
+                </label>
+                <label class="general chocolatemilk">
+                  <input type="checkbox">
+                  Chocolate Milk
+                </label>
+                <label class="general almondmilk">
+                  <input type="checkbox">
+                  Almond Milk
+                </label>
+                <label class="general soymilk">
+                  <input type="checkbox">
+                  Soy Milk
+                </label>
+              </ul>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="fruits4">
+            <h4 class="fruit-header">
+              Grains
+            </h4>
+            <div class="fruit-columns">
+              <ul class="list fruit-list-1 col-sm-3">
+                <label class="general wholewheatbread">
+                  <input type="checkbox">
+                  Whole Wheat Bread
+                </label>
+                <label class="general whitebread">
+                  <input type="checkbox">
+                  White Bread
+                </label>
+                 <label class="general bagel">
+                  <input type="checkbox">
+                  Bagel
+                </label>
+                 <label class="general waffle">
+                  <input type="checkbox">
+                  Waffle
+                </label>
+                 <label class="general pancake">
+                  <input type="checkbox">
+                  Pancake
+                </label>
+                 <label class="croissant">
+                  <input type="checkbox">
+                  Croissant
+                </label>
+              </ul>
+              <ul class="list fruit-list-2 col-sm-3">
+                <label class="general muffin">
+                  <input type="checkbox">
+                  Muffin
+                </label>
+                <label class="general englishmuffin">
+                  <input type="checkbox">
+                  English Muffin
+                </label>
+                <label class="general doughnut">
+                  <input type="checkbox">
+                  Doughnut
+                </label>
+                <label class="general oats">
+                  <input type="checkbox">
+                  Oats
+                </label>
+                <label class="general quinoa">
+                  <input type="checkbox">
+                  Quinoa
+                </label>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </div>
+      
+    <div class="button-holder">
+      <button>
+        Calculate
+      </button>
+    </div>
+    
+    <p class="twitter-button">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-text="Find out where your breakfast falls on the glycemic index scale!" data-size="large" data-related="edsonmendietaj">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </p>
+
+    
+    <footer class="">
       <p class="peepee"><a class="take-top" href="#page-header"><span>Top</span></a></p>
       <div class="dalinks col-md-6">
         <p class="links"><span>Useful Links</span></p>
         <ul>
           <li><a href="http://www.dummies.com/how-to/content/how-to-calculate-glycemic-load.html">How it's Calulated</a></li>
-          <li><a href="http://nutritiondata.self.com/help/estimated-glycemic-load>">More about Calculation</a></li>
+          <li><a href="http://nutritiondata.self.com/help/estimated-glycemic-load">More about Calculation</a></li>
           <li><a href="http://www.glycemicindex.com/testing_research.php">GI Testing &amp; Research</a></li>
         </ul>
       </div>
@@ -41,9 +289,11 @@
       </div>
     </footer>
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="jquery.fittext.js"></script>
+    <script src="icheck.js"></script>
     <script src="main.js"></script>
   </body>
 </html> 
