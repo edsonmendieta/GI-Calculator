@@ -17,10 +17,7 @@ fatsecret.setCanvas("home");
   });
   
   // initilizes Bootstrap Tooltips
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
-  
+    $('[data-toggle="tooltip"]').tooltip();  
   
   
   // Dynamically adds checked food item to breakfast list 
