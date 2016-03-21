@@ -20,21 +20,27 @@ fatsecret.setCanvas("home");
     $('[data-toggle="tooltip"]').tooltip();  
   
   
-  // Dynamically adds checked food item to breakfast list 
+  // Dynamically adds checked food item and serving selection, wrapped in a div, to breakfast list 
   $('input').on('ifChecked', function(event) {       
     var liText = $(this).parent().parent().text();
-    $('.food-list').append('<li class=>' + liText + '</li>');
+//     var newLi= $('<li class=>' + liText + '</li>');
+//     var servings = $('<select class="serving-size"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select>');
+    var wrappedUp = $('<div><li class=>' + liText + '</li><select class="serving-size"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></div>');
+    $('.food-list').append(wrappedUp);
+//     $('.food-list').append('<li class=>' + liText + '</li>');
+//     $('.food-list').append(servings);
     
 })
   
   // Dynamically removes un-checked food item from breakfast list
   $('input').on('ifUnchecked', function(event) {
     var liText = $(this).parent().parent().text();
-    $('li:contains(' + liText + ')').remove();
+    $('.food-list div:contains(' + liText + ')').remove();
+//     $('li:contains(' + liText + ')').remove();
 })
   
 
-  $('.fatsecret_home_search_input').val(poop);
+//   $('.fatsecret_home_search_input').val(poop);
 
 
   
