@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>GI Calculator</title>
-    <meta name="description" content="Gives glycemix index of food items and glycemic load. Give it a go!">
+    <title>Breakfast Health Finder</title>
+    <meta name="description" content="Get glycemic index and health information of your breakfast foods!">
     <meta name="viewport" content="width=device-width, initial-scale=1">
    
     <!-- Latest compiled and minified CSS -->
@@ -21,7 +21,7 @@
   </head>
   <body>
     <h1 class="page-header" id="page-header">
-      Breakfast GI Load<br>Calculator
+      Breakfast Health<br>Finder
     </h1>
     
     <ul class="food-list">
@@ -30,7 +30,7 @@
     <div role="tabpanel"> 
       <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active"><a href="#fruits1" aria-controls="" data-toggle="tab" role="tab">Fruit</a></li>
-        <li role="presentation"><a href="#fruits2" aria-controls="" data-toggle="tab" role="tab">Meat/Poultry</a></li>
+        <li role="presentation"><a href="#fruits2" aria-controls="" data-toggle="tab" role="tab">Meat/Poultry/Fish</a></li>
         <li role="presentation"><a href="#fruits3" aria-controls="" data-toggle="tab" role="tab">Liquids</a></li>
         <li role="presentation"><a href="#fruits4" aria-controls="" data-toggle="tab" role="tab">Grains</a></li>
       </ul>
@@ -41,110 +41,106 @@
               </h4>
               <div class="fruit-columns">
                 <ul class="list fruit-list-1 col-sm-3">
-                  <label class="general orange">
+                  <label class="general orange" data-toggle="tooltip" data-placement="left" title="40">
                     <input type="checkbox">
                     Orange
                   </label>
-                  <label class="general apple">
+                  <label class="general apple" data-toggle="tooltip" data-placement="left" title="39">
                     <input type="checkbox">
                     Apple
                   </label>
-                   <label class="general banana">
+                   <label class="general banana" data-toggle="tooltip" data-placement="left" title="62">
                     <input type="checkbox">
                     Banana
                   </label>
-                   <label class="general grapes">
+                   <label class="general grapes" data-toggle="tooltip" data-placement="left" title="59">
                     <input type="checkbox">
                     Grapes
                   </label>
-                   <label class="general Pineapple">
+                   <label class="general peach" data-toggle="tooltip" data-placement="left" title="42">
                     <input type="checkbox">
-                    Pineapple
+                    Peach
                   </label>
-                   <label class="general Kiwi">
+                   <label class="general pear" data-toggle="tooltip" data-placement="left" title="38">
                     <input type="checkbox">
-                    Kiwi
+                    Pear
                   </label>
                 </ul>
                 <ul class="list fruit-list-2 col-sm-3">
-                  <label class="general mango">
+                  <label class="general mango" data-toggle="tooltip" data-placement="left" title="51">
                     <input type="checkbox">
                     Mango
                   </label>
-                  <label class="general blueberries">
+                  <label class="general blueberries" data-toggle="tooltip" data-placement="left" title="53">
                     <input type="checkbox">
                     Blueberries
                   </label>
-                   <label class="general grapefruit">
+                   <label class="general grapefruit" data-toggle="tooltip" data-placement="left" title="25">
                     <input type="checkbox">
                     Grapefruit
                   </label>
-                   <label class="general strawberry">
+                   <label class="general strawberry" data-toggle="tooltip" data-placement="left" title="40">
                     <input type="checkbox">
                     Strawberry
                   </label>
-                   <label class="general tangerine">
+                   <label class="general tangerine" data-toggle="tooltip" data-placement="left" title="38">
                     <input type="checkbox">
                     Tangerine
                   </label>
-                   <label class="general blackberry">
+                   <label class="general watermelon" data-toggle="tooltip" data-placement="left" title="72">
                     <input type="checkbox">
-                    Blackberry
+                    Watermelon
                   </label>
                 </ul>
               </div>
             </div> 
           <div role="tabpanel" class="tab-pane" id="fruits2">
             <h4 class="fruit-header">
-              Meat/Poultry
+              Meat/Poultry/Fish
             </h4>
             <div class="fruit-columns">
               <ul class="list fruit-list-1 col-sm-3">
-                <label class="general steak">
-                  <input type="checkbox">
-                  Steak
-                </label>
-                <label class="general beef">
-                  <input type="checkbox">
-                  Beef
-                </label>
-                 <label class="general chicken">
-                  <input type="checkbox">
-                  Chicken
-                </label>
-                 <label class="general ham">
-                  <input type="checkbox">
-                  Ham
-                </label>
-                 <label class="general turkey">
-                  <input type="checkbox">
-                  Turkey
-                </label>
-                 <label class="general salami">
-                  <input type="checkbox">
-                  Salami
-                </label>
-              </ul>
-              <ul class="list fruit-list-2 col-sm-3">
-                <label class="general duck">
+                <label class="general duck" data-toggle="tooltip" data-placement="left" title="0">
                   <input type="checkbox">
                   Duck
                 </label>
-                <label class="general pork">
+                <label class="general beef" data-toggle="tooltip" data-placement="left" title="0">
+                  <input type="checkbox">
+                  Beef
+                </label>
+                 <label class="general chicken" data-toggle="tooltip" data-placement="left" title="0">
+                  <input type="checkbox">
+                  Chicken
+                </label>
+                 <label class="general ham" data-toggle="tooltip" data-placement="left" title="0">
+                  <input type="checkbox">
+                  Ham
+                </label>
+                 <label class="general turkey" data-toggle="tooltip" data-placement="left" title="0">
+                  <input type="checkbox">
+                  Turkey
+                </label>
+                 <label class="gene0" data-toggle="tooltip" data-placement="left" title="0">
+                  <input type="checkbox">
+                  Elk
+                </label>
+              </ul>
+              <ul class="list fruit-list-2 col-sm-3">
+                <label class="general pork" data-toggle="tooltip" data-placement="left" title="0">
                   <input type="checkbox">
                   Pork
                 </label>
-                <label class="general sausage">
+                <label class="general fish" data-toggle="tooltip" data-placement="left" title="0">
                   <input type="checkbox">
-                  Sausage
+                  Fish
                 </label>
-                <label class="general eggs">
+                <label class="general eggs" data-toggle="tooltip" data-placement="left" title="0">
                   <input type="checkbox">
                   Eggs
                 </label>
-                <label class="general bacon">
+                <label class="general lamb" data-toggle="tooltip" data-placement="left" title="0">
                   <input type="checkbox">
-                  Bacon
+                  Lamb
                 </label>
               </ul>
             </div>
@@ -155,45 +151,45 @@
             </h4>
             <div class="fruit-columns">
               <ul class="list fruit-list-1 col-sm-3">
-                <label class="general applejuice">
+                <label class="general applejuice" data-toggle="tooltip" data-placement="left" title="41">
                   <input type="checkbox">
                   Apple Juice
                 </label>
-                <label class="general cranberryjuice">
+                <label class="general cranberryjuice" data-toggle="tooltip" data-placement="left" title="68">
                   <input type="checkbox">
                   Cranberry Juice
                 </label>
-                 <label class="general orangejuice">
+                 <label class="general orangejuice" data-toggle="tooltip" data-placement="left" title="57">
                   <input type="checkbox">
                   Orange Juice
                 </label>
-                 <label class="general apricotjuice">
+                 <label class="general carrotjuice" data-toggle="tooltip" data-placement="left" title="43">
                   <input type="checkbox">
-                  Apricot Juice
+                  Carrot Juice
                 </label>
-                 <label class="general lemonade">
+                 <label class="general lemonade" data-toggle="tooltip" data-placement="left" title="94">
                   <input type="checkbox">
                   Lemonade
                 </label>
-                 <label class="general milk">
+                 <label class="general hotchocolatemix" data-toggle="tooltip" data-placement="left" title="51">
                   <input type="checkbox">
-                  Milk
+                  Hot Chocolate Mix
                 </label>
               </ul>
               <ul class="list fruit-list-2 col-sm-3">
-                <label class="general prunejuice">
+                <label class="general tomatojuice" data-toggle="tooltip" data-placement="left" title="38">
                   <input type="checkbox">
-                  Prune Juice
+                  Tomato Juice
                 </label>
-                <label class="general chocolatemilk">
+                <label class="general chocolatemilk" data-toggle="tooltip" data-placement="left" title="49">
                   <input type="checkbox">
                   Chocolate Milk
                 </label>
-                <label class="general almondmilk">
+                <label class="general almondmilk" data-toggle="tooltip" data-placement="left" title="25">
                   <input type="checkbox">
                   Almond Milk
                 </label>
-                <label class="general soymilk">
+                <label class="general soymilk" data-toggle="tooltip" data-placement="left" title="44">
                   <input type="checkbox">
                   Soy Milk
                 </label>
@@ -206,51 +202,55 @@
             </h4>
             <div class="fruit-columns">
               <ul class="list fruit-list-1 col-sm-3">
-                <label class="general wholewheatbread">
+                <label class="general wholewheatbread" data-toggle="tooltip" data-placement="left" title="71">
                   <input type="checkbox">
                   Whole Wheat Bread
                 </label>
-                <label class="general whitebread">
+                <label class="general whitebread" data-toggle="tooltip" data-placement="left" title="71">
                   <input type="checkbox">
                   White Bread
                 </label>
-                 <label class="general bagel">
+                 <label class="general bagel" data-toggle="tooltip" data-placement="left" title="72">
                   <input type="checkbox">
                   Bagel
                 </label>
-                 <label class="general waffle">
+                 <label class="general waffle" data-toggle="tooltip" data-placement="left" title="76">
                   <input type="checkbox">
                   Waffle
                 </label>
-                 <label class="general pancake">
+                 <label class="general pancake" data-toggle="tooltip" data-placement="left" title="66">
                   <input type="checkbox">
                   Pancake
                 </label>
-                 <label class="croissant">
+                 <label class="croissant" data-toggle="tooltip" data-placement="left" title="67">
                   <input type="checkbox">
                   Croissant
                 </label>
               </ul>
               <ul class="list fruit-list-2 col-sm-3">
-                <label class="general muffin">
+                <label class="general muffin" data-toggle="tooltip" data-placement="left" title="60">
                   <input type="checkbox">
                   Muffin
                 </label>
-                <label class="general englishmuffin">
+                <label class="general englishmuffin" data-toggle="tooltip" data-placement="left" title="90">
                   <input type="checkbox">
                   English Muffin
                 </label>
-                <label class="general doughnut">
+                <label class="general doughnut" data-toggle="tooltip" data-placement="left" title="76">
                   <input type="checkbox">
                   Doughnut
                 </label>
-                <label class="general oats">
+                <label class="general oatmeal" data-toggle="tooltip" data-placement="left" title="58">
                   <input type="checkbox">
-                  Oats
+                  Oatmeal
                 </label>
-                <label class="general quinoa">
+                <label class="general quinoa" data-toggle="tooltip" data-placement="left" title="53">
                   <input type="checkbox">
                   Quinoa
+                </label>
+                <label class="general wholegrainbread" data-toggle="tooltip" data-placement="left" title="51">
+                  <input type="checkbox">
+                  Whole Grain Bread
                 </label>
               </ul>
             </div>
@@ -260,12 +260,14 @@
       
     <div class="button-holder">
       <button>
-        Calculate
+        Get Info
       </button>
     </div>
     
+    <div id="my_container" class="fatsecret_container"></div>
+    
     <p class="twitter-button">
-    <a href="https://twitter.com/share" class="twitter-share-button" data-text="Find out where your breakfast falls on the glycemic index scale!" data-size="large" data-related="edsonmendietaj">Tweet</a>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-text="Get the glycemic index and health info of your breakfast foods!" data-size="large" data-related="edsonmendietaj">Tweet</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     </p>
 
@@ -292,6 +294,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="http://platform.fatsecret.com/js?key=90aa194b3714446c83ad65ccaa0aa57d"></script>
     <script src="jquery.fittext.js"></script>
     <script src="icheck.js"></script>
     <script src="main.js"></script>

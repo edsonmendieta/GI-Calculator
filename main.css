@@ -157,6 +157,7 @@ input[type="checkbox"] {
   color: #fff;
   border: solid 1px #D94E3B;
   background: #cb3b27;
+  margin-bottom: 5%;
   padding: .5% .5%;
   
   -webkit-transition: all 0.1s;
