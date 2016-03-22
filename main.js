@@ -25,8 +25,9 @@ fatsecret.setCanvas("home");
     var liText = $(this).parent().parent().text();
 //     var newLi= $('<li class=>' + liText + '</li>');
 //     var servings = $('<select class="serving-size"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select>');
-    var wrappedUp = $('<div><li class=>' + liText + '</li><select class="serving-size"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></div>');
+    var wrappedUp = $('<div class="active"><li>' + liText + '</li><select class="serving-size"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></div>');
     $('.food-list').append(wrappedUp);
+    $(wrappedUp).addClass('' + liText + '');
 //     $('.food-list').append('<li class=>' + liText + '</li>');
 //     $('.food-list').append(servings);
     
@@ -41,9 +42,61 @@ fatsecret.setCanvas("home");
   
 
 //   $('.fatsecret_home_search_input').val(poop);
-
-
   
+  
+  var foodLoads = {
+    orange: 6.7,
+    apple: 5.6,
+    banana: 12.7,
+    grapes: 16.3,
+    peach: 2.7,
+    pear: 6.5,
+    mango: 16.1,
+    blueberries: 9.3,
+    grapefruit: 1.7,
+    strawberry: 3.5,
+    tangerine: 3.1,
+    watermelon: 8,
+    duck: 0,
+    beef: 0,
+    chicken: 0,
+    ham: 0,
+    turkey: 0,
+    elk: 0,
+    pork: 0,
+    fish: 0,
+    eggs: 0,
+    lamb: 0,
+    applejuice: 11.8,
+    cranberryjuice: 23.3,
+    orangejuice: 14.4,
+    carrotjuice: 8.6,
+    lemonade: 24.3,
+    hotchocolatemix: 10.2,
+    tomatojuice: 3.5,
+    chocolatemilk: 13.3,
+    almondmilk: 0.02,
+    soymilk: 4,
+    wholewheatbread: 6.1,
+    whitebread: 10.7,
+    bagel: 30,
+    waffle: 13.8,
+    pancake: 5.3,
+    croissant: 12.2,
+    muffin: 28.8,
+    englishmuffin: 21.3,
+    doughnut: 15.2,
+    oatmeal: 12.6,
+    quinoa: 20.4,
+    wholegrainbread: 7.1 
+  }
+
+
+$('.submit-items').click(function() {
+   var type = $('.food-list .active li').text();
+   var value = foodLoads[type.toLowerCase()];
+   $('.' + type).append('<p>' + value + '</p>');
+})
 
   
   
