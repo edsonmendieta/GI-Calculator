@@ -54,7 +54,7 @@ fatsecret.setCanvas("home");
     mango: 16.1,
     blueberries: 9.3,
     grapefruit: 1.7,
-    strawberry: 3.5,
+    strawberries: 3.5,
     tangerine: 3.1,
     watermelon: 8,
     duck: 0,
@@ -92,10 +92,15 @@ fatsecret.setCanvas("home");
   }
 
 
-$('.submit-items').click(function() {
-   var type = $('.food-list .active li').text();
-   var value = foodLoads[type.toLowerCase()];
-   $('.' + type).append('<p>' + value + '</p>');
+$('.submit-items').on('click', function() {
+  $('.food-list .active li').each(function() {
+    var foodName = $(this).text().trim();
+    var value = foodLoads[foodName];
+    $(this).parent().append('<p>' + value + '</p>'); 
+  })
+ 
+
+
 })
 
   
