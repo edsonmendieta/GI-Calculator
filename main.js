@@ -91,12 +91,13 @@ fatsecret.setCanvas("home");
     wholegrainbread: 7.1 
   }
 
-
+// Gives the GI load of selected food items on-click of "Get Loads" button: GI load of selected food item * selected # of servings.
 $('.submit-items').on('click', function() {
   $('.food-list .active li').each(function() {
-    var foodName = $(this).text().trim();
-    var value = foodLoads[foodName];
-    $(this).parent().append('<p>' + value + '</p>'); 
+    var foodName = $(this).text().trim(); // Grabs food item name + trims whitespace in HTML to avoid messing with finding a match in the foodLoads object.
+    var giLoad = foodLoads[foodName]; // GI value of 1 serving of selected food item.
+    var servings = $(this).next().val() * giLoad; // The multiplication.
+    $(this).parent().append('<p>' + servings + '</p>');
   })
  
 
